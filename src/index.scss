@@ -1,0 +1,73 @@
+$font-primary: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+$color-link: #646cff;
+$color-link-hover: #535bf2;
+$color-light-scheme: #213547;
+$bg-light-scheme: #ffffff;
+$bg-dark-scheme: #242424;
+$color-white: rgba(255, 255, 255, 0.87);
+$button-bg: #1a1a1a;
+$body-color: #191919; 
+$button-hover-border: #646cff;
+$button-focus-outline: -webkit-focus-ring-color;
+
+:root {
+  font-family: $font-primary;
+  line-height: 1.5;
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+
+  color-scheme: light dark;
+  color: $color-white;
+  background-color: $bg-dark-scheme;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: $color-link;
+  text-decoration: inherit;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: $body-color;
+}
+
+h3 {
+  font-size: 2em;
+  line-height: 1.1;
+  margin: 20px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: $button-bg;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  &:hover {
+    border-color: $button-hover-border;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto $button-focus-outline;
+  }
+}
